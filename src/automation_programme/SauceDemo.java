@@ -38,9 +38,9 @@ public class SauceDemo {
         //Print the page source
         System.out.println(driver.getPageSource());
         //Enter the email to email field.
-        driver.findElement(By.id("user-name")).sendKeys("Krishna");
+        driver.findElement(By.id("user-name")).sendKeys("visual_user");
         //Enter the password field
-        driver.findElement(By.id("password")).sendKeys("Radha");
+        driver.findElement(By.id("password")).sendKeys("secret_sauce");
         //Click on Login Button.
         driver.findElement(By.id("login-button")).click();
         //Print the current url.
@@ -50,7 +50,7 @@ public class SauceDemo {
         //Refresh the page.
         driver.navigate().refresh();
         //Close the browser.
-        driver.quit();
+        //driver.quit();
 
     }
 }
